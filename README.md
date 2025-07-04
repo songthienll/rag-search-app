@@ -47,7 +47,7 @@ cd rag-search-app
 
 2. **Install Python packages**
 ```bash
-   pip install streamlit PyPDF2 requests beautifulsoup4 numpy scikit-learn ollama
+pip install streamlit PyPDF2 requests beautifulsoup4 numpy scikit-learn ollama
 ```
 3. **Install Ollama and pull required models**
 Visit https://ollama.ai for Ollama installation instructions.
