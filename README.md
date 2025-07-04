@@ -61,13 +61,13 @@ streamlit run app.py
 ```
 
 
-💡Usage
-Open the app in your browser after running Streamlit
+##💡Usage
+**Open the app in your browser after running Streamlit**
 
-Upload a PDF or enter a URL in the Upload tab
+**Upload a PDF or enter a URL in the Upload tab**
 
-Click "Process" to extract and embed text
+**Click "Process" to extract and embed text**
 
-Switch to Search tab and ask any question related to the document
+**Switch to Search tab and ask any question related to the document**
 
-The app will retrieve relevant chunks and generate a grounded answer using the selected LLM
+**The app will retrieve relevant chunks and generate a grounded answer using the selected LLM**
