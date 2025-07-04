@@ -5,3 +5,4 @@ beautifulsoup4
 numpy
 scikit-learn
 ollama
+baby
