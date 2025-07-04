@@ -1,0 +1,7 @@
+streamlit
+PyPDF2
+requests
+beautifulsoup4
+numpy
+scikit-learn
+ollama
