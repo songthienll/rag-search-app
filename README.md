@@ -59,3 +59,15 @@ ollama pull llama3.2  # or any other model you want to use
 ```bash
 streamlit run app.py
 ```
+
+
+💡Usage
+Open the app in your browser after running Streamlit
+
+Upload a PDF or enter a URL in the Upload tab
+
+Click "Process" to extract and embed text
+
+Switch to Search tab and ask any question related to the document
+
+The app will retrieve relevant chunks and generate a grounded answer using the selected LLM
