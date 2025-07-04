@@ -17,7 +17,10 @@ This is a **Retrieval-Augmented Generation (RAG) Q&A application** built with **
 - Search and retrieve top relevant chunks
 - Query LLM (e.g. **llama3.2**) to produce final answers
 - Streamlit UI with upload, search tabs, and progress indicators
-
+  
+---
+## Demo
+![me](https://github.com/songthienll/rag-search-app/blob/main/assets/demo.gif)
 ---
 
 ## 🛠️ Requirements
