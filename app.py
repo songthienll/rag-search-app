@@ -118,10 +118,7 @@ def search_similar_documents(query, top_k=3):
         return []
 
     # Calculate cosine similarity
-    similarities = cosine_similarity(
-        [query_embedding],
-        st.session_state.embeddings
-    )[0]
+    similarities = cosine_similarity([query_embedding], st.session_state.embeddings)[0]
 
     # Get top k similar documents
     top_indices = np.argsort(similarities)[::-1][:top_k]
@@ -276,11 +273,13 @@ else:
                         context = "\n".join([result['content'] for result in results])
 
                         # Create prompt
-                        prompt = f"""Context: {context}
+                        prompt = f"""
+You are an AI assistant with expertise in reading documents and answering questions based on them.
+Context: {context}
 
 Question: {query}
 
-Please provide a comprehensive answer based on the given context. If the context doesn't contain enough information to answer the question, please say so."""
+Answer the question comprehensively based on the context above. If the context doesn't contain enough information to answer the question, please say so."""
 
                         # Query model
                         answer = query_ollama(prompt, selected_model)
@@ -291,7 +290,7 @@ Please provide a comprehensive answer based on the given context. If the context
                         st.subheader("🎯 Answer:")
                         st.write(answer)
 
-                        st.subheader("📄 Context:")
+                        st.subheader("📄 Top Context Chunks:")
                         for i, result in enumerate(results):
                             with st.expander(f"Relevant chunk {i + 1} (similarity: {result['similarity']:.3f})"):
                                 st.write(result['content'])
