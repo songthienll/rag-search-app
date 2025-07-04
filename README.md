@@ -61,7 +61,7 @@ streamlit run app.py
 ```
 
 
-##💡Usage
+#💡Usage
 **Open the app in your browser after running Streamlit**
 
 **Upload a PDF or enter a URL in the Upload tab**
