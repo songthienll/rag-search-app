@@ -1,1 +1,61 @@
-# rag-search-app
+# 📚 RAG Search App
+
+This is a **Retrieval-Augmented Generation (RAG) Q&A application** built with **Streamlit** and **Ollama**. It allows users to:
+
+✅ Upload a **PDF document** or enter a **URL**  
+✅ Extract and chunk text into manageable pieces  
+✅ Generate embeddings for each chunk  
+✅ Search for relevant text chunks based on user queries using **cosine similarity**  
+✅ Use **Large Language Models (LLMs)** from Ollama to generate answers grounded on retrieved context
+
+---
+
+## 🚀 Features
+
+- Upload **PDF files** or extract text from **web URLs**
+- Generate embeddings using **nomic-embed-text** model
+- Search and retrieve top relevant chunks
+- Query LLM (e.g. **llama3.2**) to produce final answers
+- Streamlit UI with upload, search tabs, and progress indicators
+
+---
+
+## 🛠️ Requirements
+
+- **Ollama** installed with required models:
+  - `nomic-embed-text`
+  - `llama3.2` (or your preferred LLM model)
+- **Python packages**:
+  - `streamlit`
+  - `PyPDF2`
+  - `requests`
+  - `beautifulsoup4`
+  - `numpy`
+  - `scikit-learn`
+  - `ollama`
+
+---
+
+## 📥 Installation
+
+1. **Clone this repository**
+
+```bash
+git clone https://github.com/songthienll/rag-search-app.git
+cd rag-search-app
+```
+
+2. **Install Python packages**
+```bash
+   pip install streamlit PyPDF2 requests beautifulsoup4 numpy scikit-learn ollama
+```
+3. **Install Ollama and pull required models**
+Visit https://ollama.ai for Ollama installation instructions.
+```bash
+ollama pull nomic-embed-text
+ollama pull llama3.2  # or any other model you want to use
+``` 
+4. **Run the Streamlit app**
+```bash
+streamlit run app.py
+```
