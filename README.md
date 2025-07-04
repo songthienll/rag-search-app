@@ -21,6 +21,7 @@ This is a **Retrieval-Augmented Generation (RAG) Q&A application** built with **
 ---
 ## Demo
 ![me](https://github.com/songthienll/rag-search-app/blob/main/assets/demo.gif)
+![me](https://github.com/songthienll/rag-search-app/blob/main/assets/test.png)
 ---
 
 ## 🛠️ Requirements
