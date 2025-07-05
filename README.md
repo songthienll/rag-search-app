@@ -53,7 +53,7 @@ cd rag-search-app
 pip install requirements.txt
 ```
 3. **Install Ollama and pull required models**
-Visit https://ollama.ai for Ollama installation instructions.
+**Visit https://ollama.ai for Ollama installation instructions.**
 ```bash
 ollama pull nomic-embed-text
 ollama pull llama3.2  # or any other model you want to use
